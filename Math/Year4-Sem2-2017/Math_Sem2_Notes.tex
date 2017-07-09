@@ -3,6 +3,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{romannum}
 \setlength{\voffset}{-0.75in}
 \setlength{\textheight}{700px}
 \begin{document}
@@ -13,9 +14,8 @@ Mathematics \\
 \author{Cxo05}
 
 \maketitle
-
 \section{Methods of Proof}
-Proofing stuff, trivial right? Probably not. Presentation plays a large part on whether you get the full mark or not.
+Proving stuff, trivial right? Probably not. Presentation plays a large part on whether you get the full mark or not.
 
 \subsection{Definitions}
 \subsubsection{Statements}
@@ -25,11 +25,43 @@ Conditional statements are statements where the truth of a statement is conditio
 \begin{center}
 $p \rightarrow q$
 \end{center}
-The above denotes that "If $p$, then $q$". This statement is false when $p$ is true and $q$ is false; otherwise it is true.
-\newline\newline
-\textbf{Example} 
-If $n$ is an odd integer, prove that $n^2$ is an odd integer.
-\newline
+The above denotes the statement ``If $p$, then $q$''. This statement is false when $p$ is true and $q$ is false; otherwise it is true.
+\subsubsection{Converse of a statement}
+The converse of $p \rightarrow q$ is $q
+\rightarrow p$ . These statements are \textbf{NOT} logically equivalent. 
+\subsubsection{Contrapositive of a statement}
+The contrapositive of $p \rightarrow q$ is $\sim q \rightarrow \sim p$ . These statements are logically equivalent, thus the original statement is true when its contrapositive is true.
+\subsubsection{Inverse of a statement}
+The inverse of $p \rightarrow q$ is $\sim p \rightarrow \sim q$ . These statements are \textbf{NOT} logically equivalent. 
+\subsection{Proof by contradiction}
+\begin{enumerate}
+  \item Suppose that the statement to be proved is false.
+  \item Show that the assumption leads to a contradiction.
+\end{enumerate}
+Since a state cannot be both true and false, the statement being false leads to a contradiction, therefore it must be true. 
+\begin{center}
+$r : p \rightarrow q$
+\end{center}
+\begin{center}
+$\sim r : \sim (p \rightarrow q)$
+\end{center}
+\begin{center}
+$\sim r : p \wedge \sim q$
+\end{center}
+\subsection{Proof by mathematical induction}
+\begin{enumerate}
+  \item Let $P_n$ be the statement you want to prove. Add the range of n as well.
+  \item Show that $P_n$ is true for the base case of $n$.
+  \item Let $k$ be an arbitrary integer such that its range is the same as the range of n and suppose that the statement $P_k$ is true.
+  \item Expand the LHS of $P_{k+1}$ to include our assumption of $P_k$.
+  \item Continue doing math until you reach the RHS of $P_{k+1}$
+  \item Thus, $P_k \rightarrow P_{k+1}$ 
+  \item Hence, by mathematical induction, $P_n$ is true for all integers n, within its specified range.  
+\end{enumerate}
 
-
+\section{Differentiation \Romannum{3}}
+\vfill
+\fbox{
+This thus concludes the summary for Year 4 Mathematics Semester 2 2017.
+}
 \end{document}
